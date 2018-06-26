@@ -1,0 +1,75 @@
+<ion-header >
+  <custom-header></custom-header>
+</ion-header>
+
+<ion-content>
+  <ion-slides>
+  <ion-slide>
+  <ion-content padding class="img first">
+    
+<div class="topTitle">
+<p align="center">Welcome to Newark 2020</p>
+
+
+</div>
+<div class="text">
+  <p align="center">We offer 1500+ job vacancies right now</p>
+</div>
+<ion-searchbar [(ngModel)]="searchTerm" 
+(ionInput)="setFilteredItems()" 
+[showCancelButton]="shouldShowCancel"
+placeholder="Type in a keyword for a job you are looking for">
+</ion-searchbar>
+ 
+<div class="social">
+  <ion-icon name="logo-facebook"></ion-icon>
+  <ion-icon name="logo-twitter"></ion-icon>
+  <ion-icon name="logo-googleplus"></ion-icon>
+  <ion-icon name="logo-youtube"></ion-icon>
+</div>
+
+
+<div class="second">
+  <p> 
+      Our ambitious and achievable initial goal through Newark 2020 is to cut the unemployment gap between Newark 
+      and New Jersey in half by connecting 2,020 unemployed Newark residents to these jobs by 2020. Newark 2020’s 
+      ultimate charge is to ensure that the maximum possible number of Newark residents are competitive candidates 
+      and receive due consideration for positions in each industry. Please use this website to create a profile for 
+      yourself. Before you start your search, we want to meet you and learn about how we can best serve you. 
+      Please visit our office at 1008 Broad Street to begin.</p>
+</div>
+
+</ion-content>
+</ion-slide>
+<ion-slide >
+  
+  <ion-content class="slide2 ">
+  
+        <page-feature-emloyers></page-feature-emloyers>
+     
+      </ion-content>
+</ion-slide>
+
+<ion-slide >
+<ion-content padding="true" class="slide3">
+
+        <div>
+      <p align="center"><b>Add your resume and let your next job find you</b></p>
+      </div>
+      <div align="center" class="p_second">
+        <p>Post your Resume for free on our website</p>
+      </div>
+      <div align="center" class="p_second">
+      <button ion-button (click)="addResumePage()">Add Your Resume</button>
+      </div>
+     
+
+</ion-content>
+</ion-slide>
+</ion-slides>
+
+</ion-content>
+
+
+    
+
